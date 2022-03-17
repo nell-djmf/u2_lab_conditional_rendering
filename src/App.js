@@ -3,8 +3,11 @@ import { useState } from 'react'
 import Form from './components/Form'
 
 const App = () => {
+
   const [currentPage, setCurrentPage] = useState(0)
   const [formValues, setFormValues] = useState({ name: '', age: '', email: '' })
+
+
 
   const handleChange = (e) => {
     setFormValues({ ...formValues, [e.target.name]: e.target.value })
@@ -28,5 +31,6 @@ const App = () => {
     </div>
   )
 }
+
 
 export default App
